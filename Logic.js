@@ -19,7 +19,7 @@ return ;
     const taxableIncome = totalIncome - 800000;
     if (age === 'under-40') {
       taxAmount = taxableIncome * 0.3;
-    } else if (age === '40-or-over') {
+    } else if (age === '40-or-less-then-60') {
       taxAmount = taxableIncome * 0.4;
     } else {
       taxAmount = taxableIncome * 0.1;
