@@ -1,0 +1,162 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    border-radius: 0px;
+}
+#tax-form-container {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-end-start-radius: 80px 80px
+    
+}
+
+#tax-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ #styled{
+    width: 20em;  height: 2em;
+    position: relative;
+    left: 48px;
+    
+    border-radius:5px;
+    text-decoration:saddlebrown;
+    color:white;
+    font-style:oblique;
+    font-size: medium;
+    background-color:blue;
+ }
+ 
+ #gross-income{
+    border-radius: 5px;
+    border-color:black;
+    width: 400px;
+    height: 2em;
+ }
+ #extra-income{
+    border-radius: 5px;
+    border-color:black;
+    width: 400px;
+    height: 2em;
+ }
+ #ha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+#age{
+    border-radius: 5px;
+    width: 400px;
+    height: 3em;
+    border-color:black;
+}
+h1 {
+    font-size: 2rem;
+    left:50px;
+    
+}
+#deduction{
+    border-radius: 5px;
+    border-color:black;
+    width: 400px;
+    height: 2em;
+ }
+ .tooltip {
+    position: relative;
+   
+    display: inline-block;
+    
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: relative;
+    top: 100%;
+    left: 14%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  .dot {
+    height: 15px;
+    width: 9px;
+    background-color: darkgrey;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    right: 0px;
+    left: 10px;
+   
+  }
+  .result-container {
+    border: 2px solid #ccc; 
+    padding: 20px; 
+    width: 400px; 
+    height: 200px;
+    margin: 0 auto; 
+    text-align: center; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result-header {
+    font-size: 30px; 
+    margin-bottom: 10px; 
+  }
+  
+  .result-value {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 15px; 
+  }
+  
+  .result-footer {
+    font-style: italic; 
+    color: #666; 
+    margin-top: 10px;
+    font-size: 10px; 
+  }
+  
+  .close-button {
+    background-color: #0a0d10;
+    color: #fff; 
+    border: none; 
+    padding: 8px 16px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 15px; 
+  }
+  
+  .close-button:hover {
+    background-color: #0056b3; 
+  }
+  

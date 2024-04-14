@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <div id="tax-form-container">
+        <header>
+            <h1 style="font-style: oblique">Welcome to tax Calculator</h1>
+            <p style="display:flex" >A simple tool to calculate your taxes</p>
+        </header>
+        
+        <section id="tax-calculation">
+            <h2 id="ha" style="font-style: oblique">Tax Calculator</h2>
+            <form id="tax-form" onsubmit="event.preventDefault(); calculateTax();">
+                <div class="input-container">
+                    <label for="gross-income">Gross Annual Income:</label>
+
+                    <div class="tooltip">
+                        <i class="fa fa-question-circle-o" style="font-size:12px"></i>
+                        <span class="tooltiptext">Gross annual income refers to the total amount of income earned during a fiscal year</span>
+                      </div>
+                     
+                      <span class="tooltip">
+                       
+                 
+                        <input type="text" placeholder="Enter Gross annual income" id="gross-income" name="gross-income" required>
+                        
+                        <i class="fa fa-exclamation-circle" style="font-size:12px; position: absolute; right: 5px; top: 9px;"></i>
+                     <span class="tooltiptext" >please enter numbers only</span>
+
+             
+                      </span>
+                <div class="input-container">
+                    <label for="extra-income">Extra Income:</label>
+                    <div class="tooltip">
+                        <i class="fa fa-question-circle-o" style="font-size:12px"></i>
+                        <span class="tooltiptext">Extra income refers to money earned beyond your regular salary or primary source of income. It could come from various sources</span>
+                    </div>
+                    <div class="tooltip"> 
+
+                    <input type="text" id="extra-income"placeholder="Enter extra-income from other source" name="extra-income"><br>
+                    <i class="fa fa-exclamation-circle" style="font-size:12px; position: absolute; right: 5px; top: 9px;"></i>
+                    <br>
+                    <span class="tooltiptext" >please enter numbers only</span>
+
+                </div>
+               <br> <label for="age">Age:</label><br>
+                <select id="age" name="age">
+                    <option value="under-40">Under 40</option>
+                    <option value="40-or-over">40 or Over</option>
+                    <option value="over 60">over 60</option>
+                </select>
+                
+                <div class="input-container">
+                    <br><label for="extra-income" >Enter total applicable deduction:</label>
+                    <div class="tooltip">
+                        <i class="fa fa-question-circle-o" style="font-size:12px"></i>
+                    <span class="tooltiptext">Typically refers to the sum of all deductions that are eligible to be subtracted from a person's gross income to arrive at their taxable income</span>
+</div>
+                     <div class="tooltip">
+                    <input type="text" id="deduction" placeholder="Enter total applicable deduction" ><br>
+                    <i class="fa fa-exclamation-circle" style="font-size:12px; position: absolute; right: 5px; top: 9px;"></i>
+                    <span class="tooltiptext" >please enter numbers only</span>
+                    </div>
+                <br>
+            <br>    <button  id="styled" type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+     <div id="tax-results" style="display: none">
+                <h3>Tax Results</h3>
+                <p id="tax-amount"></p>
+               
+    </div>
+    
+
+    
+</body>
+</html>
